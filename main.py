@@ -1,7 +1,5 @@
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib import pyplot
 
 print("Hola esto es un ejemplo")
 # Cargar el DataFrame con los datos meteorológicos de Tunja
