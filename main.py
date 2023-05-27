@@ -3,12 +3,14 @@ import matplotlib.pyplot as plt
 
 print("Hola esto es un ejemplo")
 # Cargar el DataFrame con los datos meteorológicos de Tunja
-df = pd.read_csv('datos_tunja.csv', encoding='ISO-8859-1')
+ruta_archivo = "https://drive.google.com/uc?export=download&id=1jrD9j2zIzRFOcd48AiEwfS6re2uBdE1O" 
+df= pd.read_csv(ruta_archivo, encoding='latin-1')
 
+df
 
 # 3. Calcular los principales valores de las medidas de tendencia central
-central_values = df.describe()
-print(central_values)
+central = df.describe()
+print(central)
 
 # 4. Graficar una caja de bigotes de los datos de Temperatura
 plt.boxplot(df['Temperatura'])
