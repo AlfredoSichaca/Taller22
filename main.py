@@ -9,8 +9,8 @@ df= pd.read_csv(ruta_archivo, encoding='latin-1')
 df
 
 # 3. Calcular los principales valores de las medidas de tendencia central
-central_values = df.describe()
-print(central_values)
+central = df.describe()
+print(central)
 
 # 4. Graficar una caja de bigotes de los datos de Temperatura
 plt.boxplot(df['Temperatura'])
