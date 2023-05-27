@@ -1,5 +1,7 @@
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import pyplot
 
 print("Hola esto es un ejemplo")
 # Cargar el DataFrame con los datos meteorológicos de Tunja
@@ -50,6 +52,13 @@ quartile_counts = temperatura_quartiles.value_counts()
 most_common_quartile = quartile_counts.idxmax()
 print("Cuartil con la mayor cantidad de datos:", most_common_quartile)
 
+#11 Obtener la columna de humedad
+humedad = df['Humedad']
+plt.boxplot(humedad)
+plt.title('Gráfica de Caja y Bigotes - Humedad en Tunja')
+plt.xlabel('Humedad')
+plt.ylabel('Valores')
+plt.show()
 
 
 
