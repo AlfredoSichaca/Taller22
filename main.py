@@ -1,10 +1,14 @@
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
+from matplotlib import pyplot
 
 print("Hola esto es un ejemplo")
 # Cargar el DataFrame con los datos meteorológicos de Tunja
 df = pd.read_csv('datos_tunja.csv', encoding='ISO-8859-1')
 
+# 2. Identificar el tipo de variable de cada columna
+print(df.dtypes)
 
 # 3. Calcular los principales valores de las medidas de tendencia central
 central_values = df.describe()
